@@ -14,7 +14,7 @@ namespace Fractal3D
         [STAThread]
         static void Main()
         {
-            new Form1().Run();
+            new SeamCarving().Run();
         }
     }
 }

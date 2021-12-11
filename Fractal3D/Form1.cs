@@ -249,19 +249,7 @@ namespace Fractal3D
             GL.MatrixMode(MatrixMode.Modelview);
             var viewMatrix = _camera.GetViewMatrix();
             GL.LoadMatrix(ref viewMatrix);
-            //    DrawAxes();
 
-            //  ApplyLightning();
-
-            /*
-            var m = new[]
-            {
-                viewMatrix.M11, viewMatrix.M12, viewMatrix.M13, viewMatrix.M14,
-                viewMatrix.M21, viewMatrix.M22, viewMatrix.M23, viewMatrix.M24,
-                viewMatrix.M31, viewMatrix.M32, viewMatrix.M33, viewMatrix.M34,
-                viewMatrix.M41, viewMatrix.M42, viewMatrix.M43, viewMatrix.M44,
-            };
-*/
             _shader.Use();
 
             var perspective =
@@ -312,7 +300,6 @@ namespace Fractal3D
         {
             GL.BindBuffer(BufferTarget.ArrayBuffer, 0);
             GL.DeleteBuffer(_vertexBufferObject);
-            _shader.Dispose();
             base.OnUnload(e);
         }
     }

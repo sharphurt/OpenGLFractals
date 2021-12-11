@@ -67,6 +67,21 @@ namespace Fractal3D
             GL.Uniform3(GL.GetUniformLocation(Handle, name), vector3);
         }
 
+        public void SetVec2(string name, Vector2 vector2)
+        {
+            GL.Uniform2(GL.GetUniformLocation(Handle, name), vector2);
+        }
+
+        public void SetValue(string name, int value)
+        {
+            GL.Uniform1(GL.GetUniformLocation(Handle, name), value);
+        }
+        
+        public int GetVec2Address(string name)
+        {
+            return GL.GetUniformLocation(Handle, name);
+        }
+        
         public void SetMat4(string name, Matrix4 matrix4)
         {
             var m = new[]

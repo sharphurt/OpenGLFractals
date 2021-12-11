@@ -18,3 +18,7 @@ C:\Users\sharphurt\RiderProjects\OpenGLFractals\Fractal3D\bin\Debug\OpenTK.pdb
 C:\Users\sharphurt\RiderProjects\OpenGLFractals\Fractal3D\bin\Debug\OpenTK.GLControl.pdb
 C:\Users\sharphurt\RiderProjects\OpenGLFractals\Fractal3D\bin\Debug\Shaders\fragShader.glsl
 C:\Users\sharphurt\RiderProjects\OpenGLFractals\Fractal3D\bin\Debug\Shaders\vertShader.glsl
+C:\Users\sharphurt\RiderProjects\OpenGLFractals\Fractal3D\bin\Debug\Shaders\seamCarvingFrag.glsl
+C:\Users\sharphurt\RiderProjects\OpenGLFractals\Fractal3D\bin\Debug\Shaders\seamCarvingVert.glsl
+C:\Users\sharphurt\RiderProjects\OpenGLFractals\Fractal3D\bin\Debug\Assets\img.jpg
+C:\Users\sharphurt\RiderProjects\OpenGLFractals\Fractal3D\bin\Debug\Assets\container.png
