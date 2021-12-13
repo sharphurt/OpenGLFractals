@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fractal3D", "Fractal3D\Fractal3D.csproj", "{79972B02-717C-43A6-87F5-FAEFEE28D7E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGLVisualizing", "OpenGLVisualizing\OpenGLVisualizing.csproj", "{79972B02-717C-43A6-87F5-FAEFEE28D7E0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fractals", "Fractals\Fractals.csproj", "{F5EBAFFA-BB9B-4FF2-9390-980AF26FD9D0}"
 EndProject

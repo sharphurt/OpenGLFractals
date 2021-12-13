@@ -41,6 +41,25 @@ namespace Fractals
             }
         }
 
+        public void Unsplit()
+        {
+            if (!_parts.Any(p => p._parts.Any()))
+            {
+                UnsplitThis();
+                return;
+            }
+
+            foreach (var part in _parts)
+            {
+                part.Unsplit();
+            }
+        }
+
+        private void UnsplitThis()
+        {
+            _parts = new List<SerpinskyTriangle>();
+        }
+        
         private void Split()
         {
             _parts = new List<SerpinskyTriangle>();
@@ -51,19 +70,20 @@ namespace Fractals
             }
         }
 
-        public void Render(ref List<List<Vector3>> faces)
+        public void Render(ref List<List<Vector3>> faces, ref int counter)
         {
             if (!_parts.Any())
             {
                 var t = new Triangle {X = Position.X, Y = Position.Y, Scale = Scale};
                 faces.Add(t.Vertices);
+                counter++;
                 return;
             }
 
             for (var i = 0; i < Offsets.Length; i++)
             {
                 var triangle = _parts[i];
-                triangle.Render(ref faces);
+                triangle.Render(ref faces, ref counter);
             }
         }
 
